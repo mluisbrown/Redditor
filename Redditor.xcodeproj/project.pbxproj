@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C1E97051968A009001184A6 /* RCLinksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E97041968A009001184A6 /* RCLinksViewController.m */; };
+		4C1E97061968A009001184A6 /* RCLinksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E97041968A009001184A6 /* RCLinksViewController.m */; };
+		4C1E97091968A510001184A6 /* RCLinkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E97081968A510001184A6 /* RCLinkCell.m */; };
+		4C1E970A1968A510001184A6 /* RCLinkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E97081968A510001184A6 /* RCLinkCell.m */; };
+		4C1E970C1968AFF0001184A6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1E970B1968AFF0001184A6 /* QuartzCore.framework */; };
+		4C28D23519695EA100195FCA /* RCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C28D23419695EA100195FCA /* RCDetailViewController.m */; };
+		4C28D23619695EA100195FCA /* RCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C28D23419695EA100195FCA /* RCDetailViewController.m */; };
 		4C62D41919672B1A0007B67C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C62D41819672B1A0007B67C /* Foundation.framework */; };
 		4C62D41B19672B1B0007B67C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C62D41A19672B1B0007B67C /* CoreGraphics.framework */; };
 		4C62D41D19672B1B0007B67C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C62D41C19672B1B0007B67C /* UIKit.framework */; };
@@ -19,6 +26,14 @@
 		4C62D43419672B1B0007B67C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C62D41C19672B1B0007B67C /* UIKit.framework */; };
 		4C62D43C19672B1B0007B67C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C62D43A19672B1B0007B67C /* InfoPlist.strings */; };
 		4C62D43E19672B1B0007B67C /* RedditorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C62D43D19672B1B0007B67C /* RedditorTests.m */; };
+		4C62D44919672C280007B67C /* RCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C62D44819672C280007B67C /* RCModel.m */; };
+		4C62D44A19672C280007B67C /* RCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C62D44819672C280007B67C /* RCModel.m */; };
+		4C62D44D196733A80007B67C /* RCLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C62D44C196733A80007B67C /* RCLink.m */; };
+		4C62D44E196733A80007B67C /* RCLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C62D44C196733A80007B67C /* RCLink.m */; };
+		4CE36DF51967FCC3002387B0 /* RCComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE36DF41967FCC3002387B0 /* RCComment.m */; };
+		4CE36DF61967FCC3002387B0 /* RCComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE36DF41967FCC3002387B0 /* RCComment.m */; };
+		4CE36DFB19689E1D002387B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CE36DFA19689E1D002387B0 /* Main.storyboard */; };
+		4CE36DFC19689E1D002387B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CE36DFA19689E1D002387B0 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +47,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C1E97031968A009001184A6 /* RCLinksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCLinksViewController.h; sourceTree = "<group>"; };
+		4C1E97041968A009001184A6 /* RCLinksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCLinksViewController.m; sourceTree = "<group>"; };
+		4C1E97071968A510001184A6 /* RCLinkCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCLinkCell.h; sourceTree = "<group>"; };
+		4C1E97081968A510001184A6 /* RCLinkCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCLinkCell.m; sourceTree = "<group>"; };
+		4C1E970B1968AFF0001184A6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4C28D23319695EA100195FCA /* RCDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCDetailViewController.h; sourceTree = "<group>"; };
+		4C28D23419695EA100195FCA /* RCDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCDetailViewController.m; sourceTree = "<group>"; };
 		4C62D41519672B1A0007B67C /* Redditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Redditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C62D41819672B1A0007B67C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4C62D41A19672B1B0007B67C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +70,14 @@
 		4C62D43919672B1B0007B67C /* RedditorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RedditorTests-Info.plist"; sourceTree = "<group>"; };
 		4C62D43B19672B1B0007B67C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4C62D43D19672B1B0007B67C /* RedditorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedditorTests.m; sourceTree = "<group>"; };
+		4C62D44719672C280007B67C /* RCModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCModel.h; sourceTree = "<group>"; };
+		4C62D44819672C280007B67C /* RCModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCModel.m; sourceTree = "<group>"; };
+		4C62D44B196733A80007B67C /* RCLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCLink.h; sourceTree = "<group>"; };
+		4C62D44C196733A80007B67C /* RCLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCLink.m; sourceTree = "<group>"; };
+		4C62D44F196760870007B67C /* AsyncTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncTests.h; sourceTree = "<group>"; };
+		4CE36DF31967FCC3002387B0 /* RCComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCComment.h; sourceTree = "<group>"; };
+		4CE36DF41967FCC3002387B0 /* RCComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCComment.m; sourceTree = "<group>"; };
+		4CE36DFA19689E1D002387B0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C1E970C1968AFF0001184A6 /* QuartzCore.framework in Frameworks */,
 				4C62D41B19672B1B0007B67C /* CoreGraphics.framework in Frameworks */,
 				4C62D41D19672B1B0007B67C /* UIKit.framework in Frameworks */,
 				4C62D41919672B1A0007B67C /* Foundation.framework in Frameworks */,
@@ -96,6 +127,7 @@
 		4C62D41719672B1A0007B67C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4C1E970B1968AFF0001184A6 /* QuartzCore.framework */,
 				4C62D41819672B1A0007B67C /* Foundation.framework */,
 				4C62D41A19672B1B0007B67C /* CoreGraphics.framework */,
 				4C62D41C19672B1B0007B67C /* UIKit.framework */,
@@ -109,6 +141,19 @@
 			children = (
 				4C62D42719672B1B0007B67C /* RCAppDelegate.h */,
 				4C62D42819672B1B0007B67C /* RCAppDelegate.m */,
+				4C62D44719672C280007B67C /* RCModel.h */,
+				4C62D44819672C280007B67C /* RCModel.m */,
+				4C62D44B196733A80007B67C /* RCLink.h */,
+				4C62D44C196733A80007B67C /* RCLink.m */,
+				4CE36DF31967FCC3002387B0 /* RCComment.h */,
+				4CE36DF41967FCC3002387B0 /* RCComment.m */,
+				4CE36DFA19689E1D002387B0 /* Main.storyboard */,
+				4C28D23319695EA100195FCA /* RCDetailViewController.h */,
+				4C28D23419695EA100195FCA /* RCDetailViewController.m */,
+				4C1E97031968A009001184A6 /* RCLinksViewController.h */,
+				4C1E97041968A009001184A6 /* RCLinksViewController.m */,
+				4C1E97071968A510001184A6 /* RCLinkCell.h */,
+				4C1E97081968A510001184A6 /* RCLinkCell.m */,
 				4C62D42A19672B1B0007B67C /* Images.xcassets */,
 				4C62D41F19672B1B0007B67C /* Supporting Files */,
 			);
@@ -129,6 +174,7 @@
 		4C62D43719672B1B0007B67C /* RedditorTests */ = {
 			isa = PBXGroup;
 			children = (
+				4C62D44F196760870007B67C /* AsyncTests.h */,
 				4C62D43D19672B1B0007B67C /* RedditorTests.m */,
 				4C62D43819672B1B0007B67C /* Supporting Files */,
 			);
@@ -220,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CE36DFB19689E1D002387B0 /* Main.storyboard in Resources */,
 				4C62D42319672B1B0007B67C /* InfoPlist.strings in Resources */,
 				4C62D42B19672B1B0007B67C /* Images.xcassets in Resources */,
 			);
@@ -230,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C62D43C19672B1B0007B67C /* InfoPlist.strings in Resources */,
+				4CE36DFC19689E1D002387B0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,8 +288,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CE36DF51967FCC3002387B0 /* RCComment.m in Sources */,
+				4C62D44919672C280007B67C /* RCModel.m in Sources */,
+				4C28D23519695EA100195FCA /* RCDetailViewController.m in Sources */,
+				4C1E97091968A510001184A6 /* RCLinkCell.m in Sources */,
 				4C62D42519672B1B0007B67C /* main.m in Sources */,
+				4C1E97051968A009001184A6 /* RCLinksViewController.m in Sources */,
 				4C62D42919672B1B0007B67C /* RCAppDelegate.m in Sources */,
+				4C62D44D196733A80007B67C /* RCLink.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +303,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C1E970A1968A510001184A6 /* RCLinkCell.m in Sources */,
+				4C62D44E196733A80007B67C /* RCLink.m in Sources */,
+				4C62D44A19672C280007B67C /* RCModel.m in Sources */,
+				4CE36DF61967FCC3002387B0 /* RCComment.m in Sources */,
+				4C28D23619695EA100195FCA /* RCDetailViewController.m in Sources */,
 				4C62D43E19672B1B0007B67C /* RedditorTests.m in Sources */,
+				4C1E97061968A009001184A6 /* RCLinksViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +498,7 @@
 				4C62D44319672B1B0007B67C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C62D44419672B1B0007B67C /* Build configuration list for PBXNativeTarget "RedditorTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +507,7 @@
 				4C62D44619672B1B0007B67C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

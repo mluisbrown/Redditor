@@ -6,7 +6,10 @@
 //  Copyright (c) 2014 Michael Brown. All rights reserved.
 //
 
-#import <XCTest/XCTest.h>
+@import XCTest;
+
+#import "AsyncTests.h"
+#import "RCModel.h"
 
 @interface RedditorTests : XCTestCase
 
@@ -26,9 +29,36 @@
     [super tearDown];
 }
 
-- (void)testExample
-{
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+- (void) testModelLoad {
+    RCModel *model = [[RCModel alloc] init];
+    
+    StartBlock();
+    
+    [model loadLinksAfter:nil before:nil completionHandler:^(NSArray *links) {
+        EndBlock();
+        XCTAssertNotNil(links);
+    }];
+    
+    // Run the Wait loop
+    WaitUntilBlockCompletes();
+}
+
+- (void) testLoadComments {
+    RCModel *model = [[RCModel alloc] init];
+    
+    StartBlock();
+    
+    [model loadLinksAfter:nil before:nil completionHandler:^(NSArray *links) {
+        RCLink *link = [links firstObject];
+        
+        [model loadCommentsForLink:link completionHandler:^(NSArray *comments) {
+            EndBlock();
+            XCTAssertNotNil(comments);
+        }];
+    }];
+    
+    // Run the Wait loop
+    WaitUntilBlockCompletes();
 }
 
 @end
