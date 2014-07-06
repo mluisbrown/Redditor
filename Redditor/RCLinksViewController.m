@@ -16,6 +16,7 @@
 @interface RCLinksViewController ()
 @property (nonatomic, strong) NSArray *links;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityView;
+@property (nonatomic, strong) UIRefreshControl *refreshControl;
 @end
 
 @implementation RCLinksViewController
@@ -32,15 +33,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self refreshData];
     
-    [self.activityView startAnimating];
+    self.refreshControl = [[UIRefreshControl alloc]init];
+    [self.tableView addSubview:self.refreshControl];
+    [self.refreshControl addTarget:self action:@selector(refreshData) forControlEvents:UIControlEventValueChanged];
+}
 
+- (void) refreshData {
+    [self.activityView startAnimating];
+    
     [[RCModel sharedInstance] loadLinksAfter:nil before:nil completionHandler:^(NSArray *links) {
         [self.activityView stopAnimating];
+        [self.refreshControl endRefreshing];
         self.links = links;
         [self.tableView reloadData];
     }];
-    
 }
 
 - (void)didReceiveMemoryWarning
