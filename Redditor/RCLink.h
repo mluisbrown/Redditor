@@ -13,6 +13,7 @@
 @property (nonatomic, strong) NSString *idkey;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *url;
+@property (nonatomic, strong) NSString *thumbnailUrl;
 @property (nonatomic, strong) NSString *subreddit;
 @property (nonatomic, assign) NSUInteger ups;
 @property (nonatomic, assign) NSUInteger numComments;

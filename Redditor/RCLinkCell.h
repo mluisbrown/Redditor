@@ -12,5 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 @property (weak, nonatomic) IBOutlet UILabel *infoLabel;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *textViewWidthConstraint;
+@property (weak, nonatomic) IBOutlet UIImageView *thumbnail;
 
 @end

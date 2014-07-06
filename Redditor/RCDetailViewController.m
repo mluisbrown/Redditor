@@ -7,6 +7,7 @@
 //
 
 #import "RCDetailViewController.h"
+#import "RCCommentsViewController.h"
 
 
 
@@ -80,16 +81,30 @@
     [popupQuery showInView:self.webView];
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    // unwrap the controller if it's embedded in the nav controller.
+    UIViewController *controller;
+    if ([segue.destinationViewController isKindOfClass:[UINavigationController class]]) {
+        UINavigationController *navController = (UINavigationController *)segue.destinationViewController;
+        controller = [navController.viewControllers firstObject];
+    } else {
+        controller = segue.destinationViewController;
+    }
+    
+    // set the link in the comment view controller
+    if ([controller isKindOfClass:[RCCommentsViewController class]]) {
+        RCCommentsViewController *vc = (RCCommentsViewController *)controller;
+        vc.link = self.link;
+    } else {
+        NSAssert(NO, @"Unknown segue. All segues must be handled.");
+    }
 }
-*/
+
 
 #pragma mark - UIWebViewDelegate
 

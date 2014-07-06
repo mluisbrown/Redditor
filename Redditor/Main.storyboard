@@ -12,6 +12,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <activityIndicatorView key="tableFooterView" hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" id="AHx-TM-FNq">
+                            <rect key="frame" x="0.0" y="160" width="320" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </activityIndicatorView>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LinkCell" rowHeight="74" id="ldJ-IS-2Ka" customClass="RCLinkCell">
                                 <rect key="frame" x="0.0" y="86" width="320" height="74"/>
@@ -21,35 +26,47 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QB0-sg-ith">
-                                            <rect key="frame" x="15" y="0.0" width="272" height="53"/>
+                                            <rect key="frame" x="74" y="0.0" width="213" height="53"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="272" id="mqs-Ah-19t"/>
+                                                <constraint firstAttribute="width" constant="213" id="mqs-Ah-19t"/>
                                             </constraints>
                                             <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ups: 1024" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWz-am-hDe">
-                                            <rect key="frame" x="20" y="53" width="58" height="15"/>
+                                            <rect key="frame" x="15" y="53" width="58" height="15"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ioa-7W-QEs">
+                                            <rect key="frame" x="15" y="0.0" width="53" height="53"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="53" id="Hpi-az-zH8"/>
+                                                <constraint firstAttribute="height" constant="53" id="m2t-oF-nbs"/>
+                                            </constraints>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="Ioa-7W-QEs" firstAttribute="top" secondItem="QB0-sg-ith" secondAttribute="top" id="5Xc-vv-nBZ"/>
                                         <constraint firstItem="KWz-am-hDe" firstAttribute="top" secondItem="QB0-sg-ith" secondAttribute="bottom" id="C5K-g1-NL1"/>
                                         <constraint firstItem="QB0-sg-ith" firstAttribute="top" secondItem="bhS-Fn-42Y" secondAttribute="top" id="DNo-me-G2q"/>
-                                        <constraint firstItem="KWz-am-hDe" firstAttribute="leading" secondItem="bhS-Fn-42Y" secondAttribute="leading" constant="20" symbolic="YES" id="ILU-YW-Yum"/>
+                                        <constraint firstItem="KWz-am-hDe" firstAttribute="leading" secondItem="bhS-Fn-42Y" secondAttribute="leading" constant="15" id="ILU-YW-Yum"/>
                                         <constraint firstAttribute="bottom" secondItem="QB0-sg-ith" secondAttribute="bottom" constant="20" id="Ifn-nF-LgT"/>
-                                        <constraint firstItem="QB0-sg-ith" firstAttribute="leading" secondItem="bhS-Fn-42Y" secondAttribute="leading" constant="15" id="pCo-gX-dkl"/>
+                                        <constraint firstItem="Ioa-7W-QEs" firstAttribute="leading" secondItem="bhS-Fn-42Y" secondAttribute="leading" constant="15" id="Ius-bw-5Dx"/>
+                                        <constraint firstItem="QB0-sg-ith" firstAttribute="leading" secondItem="bhS-Fn-42Y" secondAttribute="leading" constant="74" id="pCo-gX-dkl"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="infoLabel" destination="KWz-am-hDe" id="MLa-Ir-RFj"/>
                                     <outlet property="textView" destination="QB0-sg-ith" id="9mL-8B-0T6"/>
+                                    <outlet property="textViewWidthConstraint" destination="mqs-Ah-19t" id="KZg-G1-DuW"/>
+                                    <outlet property="thumbnail" destination="Ioa-7W-QEs" id="8uP-SP-QOA"/>
                                     <segue destination="AnE-RM-CZ8" kind="push" id="8pK-Ij-De9"/>
                                 </connections>
                             </tableViewCell>
@@ -60,6 +77,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Reddit" id="smh-5r-II2"/>
+                    <connections>
+                        <outlet property="activityView" destination="AHx-TM-FNq" id="9Ad-Pz-W9V"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IZo-Eu-cLM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -159,22 +179,48 @@
             </objects>
             <point key="canvasLocation" x="1242" y="18"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Comments View Controller - Comments-->
         <scene sceneID="nnW-bF-3Sf">
             <objects>
-                <tableViewController id="eWz-6A-cER" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="hLI-d8-5rY">
+                <tableViewController id="eWz-6A-cER" customClass="RCCommentsViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="74" sectionHeaderHeight="22" sectionFooterHeight="22" id="hLI-d8-5rY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <activityIndicatorView key="tableFooterView" hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" id="7uj-SP-SNG">
+                            <rect key="frame" x="0.0" y="160" width="320" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </activityIndicatorView>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CommentCell" id="iv5-xd-HPv">
-                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CommentCell" rowHeight="74" id="iv5-xd-HPv" customClass="RCCommentCell">
+                                <rect key="frame" x="0.0" y="86" width="320" height="74"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iv5-xd-HPv" id="lKC-Ob-CnY">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hn5-79-F6Q">
+                                            <rect key="frame" x="0.0" y="2" width="320" height="70"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="backgroundColor" red="0.84952965560000004" green="0.84952965560000004" blue="0.84952965560000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                        </textView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="hn5-79-F6Q" secondAttribute="trailing" id="Iyu-n7-Edk"/>
+                                        <constraint firstItem="hn5-79-F6Q" firstAttribute="top" secondItem="lKC-Ob-CnY" secondAttribute="top" constant="2" id="Ocs-cv-rsW"/>
+                                        <constraint firstItem="hn5-79-F6Q" firstAttribute="leading" secondItem="lKC-Ob-CnY" secondAttribute="leading" id="XmU-Lm-SEi"/>
+                                        <constraint firstAttribute="bottom" secondItem="hn5-79-F6Q" secondAttribute="bottom" constant="2" id="Xyy-sJ-gKv"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="textView" destination="hn5-79-F6Q" id="gyi-Pt-SEC"/>
+                                    <outlet property="textViewLeadingConstraint" destination="XmU-Lm-SEi" id="SmK-44-bbV"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -182,7 +228,10 @@
                             <outlet property="delegate" destination="eWz-6A-cER" id="Cjc-eU-u5i"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="x3u-OE-32B"/>
+                    <navigationItem key="navigationItem" title="Comments" id="x3u-OE-32B"/>
+                    <connections>
+                        <outlet property="activityView" destination="7uj-SP-SNG" id="xr1-qa-4Rf"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xhT-ri-zqQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

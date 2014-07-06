@@ -30,6 +30,12 @@
 		4C62D44A19672C280007B67C /* RCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C62D44819672C280007B67C /* RCModel.m */; };
 		4C62D44D196733A80007B67C /* RCLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C62D44C196733A80007B67C /* RCLink.m */; };
 		4C62D44E196733A80007B67C /* RCLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C62D44C196733A80007B67C /* RCLink.m */; };
+		4C9CF8CB1969B8AD00406CB1 /* RCCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9CF8CA1969B8AD00406CB1 /* RCCommentCell.m */; };
+		4C9CF8CC1969B8AD00406CB1 /* RCCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9CF8CA1969B8AD00406CB1 /* RCCommentCell.m */; };
+		4C9CF8CF1969B8CC00406CB1 /* RCCommentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9CF8CE1969B8CC00406CB1 /* RCCommentsViewController.m */; };
+		4C9CF8D01969B8CC00406CB1 /* RCCommentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9CF8CE1969B8CC00406CB1 /* RCCommentsViewController.m */; };
+		4C9CF8D31969D5BE00406CB1 /* UIImageView+LCAsyncLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9CF8D21969D5BE00406CB1 /* UIImageView+LCAsyncLoad.m */; };
+		4C9CF8D41969D5BE00406CB1 /* UIImageView+LCAsyncLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9CF8D21969D5BE00406CB1 /* UIImageView+LCAsyncLoad.m */; };
 		4CE36DF51967FCC3002387B0 /* RCComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE36DF41967FCC3002387B0 /* RCComment.m */; };
 		4CE36DF61967FCC3002387B0 /* RCComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE36DF41967FCC3002387B0 /* RCComment.m */; };
 		4CE36DFB19689E1D002387B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CE36DFA19689E1D002387B0 /* Main.storyboard */; };
@@ -75,6 +81,12 @@
 		4C62D44B196733A80007B67C /* RCLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCLink.h; sourceTree = "<group>"; };
 		4C62D44C196733A80007B67C /* RCLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCLink.m; sourceTree = "<group>"; };
 		4C62D44F196760870007B67C /* AsyncTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncTests.h; sourceTree = "<group>"; };
+		4C9CF8C91969B8AD00406CB1 /* RCCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCCommentCell.h; sourceTree = "<group>"; };
+		4C9CF8CA1969B8AD00406CB1 /* RCCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCCommentCell.m; sourceTree = "<group>"; };
+		4C9CF8CD1969B8CC00406CB1 /* RCCommentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCCommentsViewController.h; sourceTree = "<group>"; };
+		4C9CF8CE1969B8CC00406CB1 /* RCCommentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCCommentsViewController.m; sourceTree = "<group>"; };
+		4C9CF8D11969D5BE00406CB1 /* UIImageView+LCAsyncLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LCAsyncLoad.h"; sourceTree = "<group>"; };
+		4C9CF8D21969D5BE00406CB1 /* UIImageView+LCAsyncLoad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LCAsyncLoad.m"; sourceTree = "<group>"; };
 		4CE36DF31967FCC3002387B0 /* RCComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCComment.h; sourceTree = "<group>"; };
 		4CE36DF41967FCC3002387B0 /* RCComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCComment.m; sourceTree = "<group>"; };
 		4CE36DFA19689E1D002387B0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -152,8 +164,14 @@
 				4C28D23419695EA100195FCA /* RCDetailViewController.m */,
 				4C1E97031968A009001184A6 /* RCLinksViewController.h */,
 				4C1E97041968A009001184A6 /* RCLinksViewController.m */,
+				4C9CF8CD1969B8CC00406CB1 /* RCCommentsViewController.h */,
+				4C9CF8CE1969B8CC00406CB1 /* RCCommentsViewController.m */,
 				4C1E97071968A510001184A6 /* RCLinkCell.h */,
 				4C1E97081968A510001184A6 /* RCLinkCell.m */,
+				4C9CF8C91969B8AD00406CB1 /* RCCommentCell.h */,
+				4C9CF8CA1969B8AD00406CB1 /* RCCommentCell.m */,
+				4C9CF8D11969D5BE00406CB1 /* UIImageView+LCAsyncLoad.h */,
+				4C9CF8D21969D5BE00406CB1 /* UIImageView+LCAsyncLoad.m */,
 				4C62D42A19672B1B0007B67C /* Images.xcassets */,
 				4C62D41F19672B1B0007B67C /* Supporting Files */,
 			);
@@ -293,9 +311,12 @@
 				4C28D23519695EA100195FCA /* RCDetailViewController.m in Sources */,
 				4C1E97091968A510001184A6 /* RCLinkCell.m in Sources */,
 				4C62D42519672B1B0007B67C /* main.m in Sources */,
+				4C9CF8CB1969B8AD00406CB1 /* RCCommentCell.m in Sources */,
 				4C1E97051968A009001184A6 /* RCLinksViewController.m in Sources */,
+				4C9CF8CF1969B8CC00406CB1 /* RCCommentsViewController.m in Sources */,
 				4C62D42919672B1B0007B67C /* RCAppDelegate.m in Sources */,
 				4C62D44D196733A80007B67C /* RCLink.m in Sources */,
+				4C9CF8D31969D5BE00406CB1 /* UIImageView+LCAsyncLoad.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,8 +326,11 @@
 			files = (
 				4C1E970A1968A510001184A6 /* RCLinkCell.m in Sources */,
 				4C62D44E196733A80007B67C /* RCLink.m in Sources */,
+				4C9CF8D41969D5BE00406CB1 /* UIImageView+LCAsyncLoad.m in Sources */,
+				4C9CF8CC1969B8AD00406CB1 /* RCCommentCell.m in Sources */,
 				4C62D44A19672C280007B67C /* RCModel.m in Sources */,
 				4CE36DF61967FCC3002387B0 /* RCComment.m in Sources */,
+				4C9CF8D01969B8CC00406CB1 /* RCCommentsViewController.m in Sources */,
 				4C28D23619695EA100195FCA /* RCDetailViewController.m in Sources */,
 				4C62D43E19672B1B0007B67C /* RedditorTests.m in Sources */,
 				4C1E97061968A009001184A6 /* RCLinksViewController.m in Sources */,

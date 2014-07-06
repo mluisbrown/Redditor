@@ -78,6 +78,7 @@ static NSString *kRCKindMore = @"more";
                             link.name = childData[@"name"];
                             link.idkey = childData[@"id"];
                             link.url = childData[@"url"];
+                            link.thumbnailUrl = childData[@"thumbnail"];
                             link.selfText = childData[@"selftext"];
                             link.selfTextHTML = childData[@"selftext_html"];
                             link.title = childData[@"title"];

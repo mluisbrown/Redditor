@@ -11,11 +11,11 @@
 #import "RCLink.h"
 #import "RCLinkCell.h"
 #import "RCDetailViewController.h"
+#import "UIImageView+LCAsyncLoad.h"
 
 @interface RCLinksViewController ()
-
 @property (nonatomic, strong) NSArray *links;
-
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityView;
 @end
 
 @implementation RCLinksViewController
@@ -32,8 +32,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self.activityView startAnimating];
 
     [[RCModel sharedInstance] loadLinksAfter:nil before:nil completionHandler:^(NSArray *links) {
+        [self.activityView stopAnimating];
         self.links = links;
         [self.tableView reloadData];
     }];
@@ -71,9 +74,11 @@
     cell.textView.scrollEnabled = NO;
     
     cell.infoLabel.text = [NSString stringWithFormat:@"%@ • %d", link.subreddit, link.ups];
-    
-//    cell.textView.layer.borderColor = [UIColor redColor].CGColor;
-//    cell.textView.layer.borderWidth = 1.0f;
+    if ([link.thumbnailUrl length]) {
+        [cell.thumbnail setImageWithURL:[NSURL URLWithString:link.thumbnailUrl]];
+    } else {
+        cell.thumbnail.image = [UIImage imageNamed:@"reddit"];
+    }
     
     return cell;
 }
@@ -83,12 +88,12 @@
 - (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     RCLink *link = self.links[indexPath.row];
-
-    UITextView *temp = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, 270, CGFLOAT_MAX)];
+    
+    UITextView *temp = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, tableView.frame.size.width - 107, CGFLOAT_MAX)];
     temp.text = link.title;
     CGSize size = [temp sizeThatFits:temp.frame.size];
     
-    return MAX(size.height + 25, 74);
+    return MAX(ceilf(size.height) + 25, 74);
 }
 
 
